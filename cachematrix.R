@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   #get inverse
-  m<-x$getinverse
+  m<-x$getsolve()
   
   #if inervse already exists, check if it is already inversed
   #if yes, returne inverse cached
